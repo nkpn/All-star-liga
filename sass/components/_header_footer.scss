@@ -1,0 +1,131 @@
+// HEADER
+header {
+    background-color: $black;
+    position: sticky;
+    top: 0;
+    z-index: 1;   
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: inherit;
+        padding: 0 20px;
+
+        @media screen and (min-width: $desktop-large) {
+            padding: 0 32px;
+        }
+    }
+
+    // Mobile header
+    .header-logo {
+        padding: 22px 0;
+
+        @media screen and (min-width: $tablet) {
+            padding: 30px 0;
+        }
+
+        img {
+           width: 138px;
+
+           @media screen and (min-width: $tablet) {
+            width: 320px;
+           }
+        }
+    }
+
+    .language-selectors {
+        display: flex;
+        flex-direction: row;
+        gap: 11px;
+
+        .language-selector {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.5px;
+            color: $white;
+            background-color: inherit;
+            
+            text-transform: uppercase;
+
+            @media screen and (min-width: $tablet) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            &.active {
+                background-color: $yellow;
+                color: $black;
+                padding: 1px 5px;
+            }
+        }
+    }
+
+}
+
+
+footer {
+    background-color: $black;
+
+    .two-columns-wrapper {
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .footer-info {
+        margin: 48px 0 0;
+
+        @media screen and (min-width: $tablet) {
+            margin: 64px 0;
+        }
+
+        p {
+            margin-top: 24px;
+
+            @media screen and (min-width: $desktop) {
+                margin-top: 32px;
+                max-width: 320px;
+            }
+        }
+    }
+
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 32px;
+        margin: 0 0 48px 0;
+        width: 100%;
+
+        @media screen and (min-width: $desktop) {
+            margin: 64px 0;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex-basis: 50%;
+
+            @media screen and (min-width: $desktop) {
+                flex-basis: unset;
+                flex-direction: row;
+                gap: 126px;
+            }
+        }
+    }
+
+    .footer-copyright {
+        padding: 40px 0;
+        text-align: left;
+
+        @media screen and (min-width: $desktop) {
+            padding: 48px 0;
+        }
+    }
+
+   
+}

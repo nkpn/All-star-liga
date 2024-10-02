@@ -1,0 +1,99 @@
+.hero{ 
+    background-color: #111111;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 517px;
+        padding-bottom: 61px;
+
+        @media screen and (min-width: $tablet) {
+            padding-top: unset;
+            padding-bottom: unset;
+            min-height: 820px;
+            justify-content: center;
+        }
+        // for hero section only
+        @media screen and (min-width: $desktop-large) {
+            max-width: 1920px;
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: $yellow;
+            margin-top: 16px;
+            text-transform: unset;
+
+            @media screen and (min-width: $tablet) {
+                margin-bottom: 60px;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            @media screen and (min-width: $tablet) {
+                margin-bottom: 120px;
+            }
+        }
+
+        img {
+            @media screen and (min-width: $tablet) {
+                max-width: 1000px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.about-us {
+    padding-top: 70px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 96px;
+    }
+
+    // FOR MOBILE ONLY
+    @media screen and (max-width: $desktop) {
+        .img-wrapper {
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+    }
+
+    .text {
+        text-align: left;
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.our-values {
+    .text {
+        text-align: left;
+    }
+    .three-columns {
+        img {
+            margin-bottom: 30px;
+
+            @media screen and (min-width: $desktop) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+.services {
+
+
+    // FOR MOBILE ONLY
+    @media screen and (max-width: $desktop) {
+        .img-wrapper {
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+    }
+}
