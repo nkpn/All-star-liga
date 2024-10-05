@@ -65,65 +65,95 @@ header {
 
 
 footer {
+    border-top: 1px solid $yellow;
     background-color: $black;
+    padding-top: 50px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 110px;
+    }
 
     .two-columns-wrapper {
-        justify-content: space-between;
-        align-items: start;
+        @media screen and (min-width: $desktop) {
+            justify-content: space-between;
+        }
     }
 
     .footer-info {
-        margin: 48px 0 0;
-
-        @media screen and (min-width: $tablet) {
-            margin: 64px 0;
-        }
-
-        p {
-            margin-top: 24px;
-
-            @media screen and (min-width: $desktop) {
-                margin-top: 32px;
-                max-width: 320px;
-            }
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+    
+        @media screen and (min-width: $desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
         }
     }
 
+    .footer-logo {
+        width: max-content;
+     }
 
-    .footer-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 32px;
-        margin: 0 0 48px 0;
-        width: 100%;
+    .footer-contact-info {
+        text-align: center;
 
         @media screen and (min-width: $desktop) {
-            margin: 64px 0;
-            flex-direction: column;
-            gap: 16px;
+            text-align: right;
         }
 
-        .group {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            flex-basis: 50%;
+        a {
+            display: block;
+            font-size: 20px;
+            color: $white;
+            line-height: 24px;
+            font-weight: 600;
 
             @media screen and (min-width: $desktop) {
-                flex-basis: unset;
-                flex-direction: row;
-                gap: 126px;
+                font-size: 32px;
+                line-height: 49px;
             }
         }
     }
 
+    .social-links-wrapper {
+        margin-top: 80px;
+
+        @media screen and (min-width: $desktop) {
+            margin-top: 146px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+
+           img {
+                width: 32px;
+
+                @media screen and (min-width: $desktop) {
+                    width: 42px;
+                }
+           }
+        }
+    }
+
+
     .footer-copyright {
-        padding: 40px 0;
-        text-align: left;
+        padding: 30px 0;
+        text-align: center;
 
         @media screen and (min-width: $desktop) {
             padding: 48px 0;
+        }
+
+        p {
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
         }
     }
 

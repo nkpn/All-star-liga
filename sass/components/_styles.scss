@@ -71,7 +71,7 @@ main {
 
     @media screen and (min-width: $desktop) { 
         flex-direction: row;
-        gap: 140px;
+        gap: 64px;
 
         & > div {
             flex-basis: 50%;
