@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,8 +25,8 @@
             </a>
         </div>
         <div class="language-selectors">
-          <a href="/en/index.html" class="language-selector active" onclick="changeLanguage('en')">ENG</a>
-          <a href="/es/index.html" class="language-selector" onclick="changeLanguage('sp')">ESP</a>
+          <a href="/en/index.html" class="language-selector" onclick="changeLanguage('en', event); return false;">ING</a>
+          <a href="/es/index.html" class="language-selector" onclick="changeLanguage('es', event); return false;">ESP</a>
         </div>
   </header>
     <!-- END OF HEADER -->
@@ -38,7 +38,7 @@
         <div class="container">
           <h1 class="visually-hidden">ALL START LIGA</h1>
           <img src="../icons/hero-h1.svg" alt="All Star Liga" loading="lazy">
-          <h2>Training with the best coaches in the world online.</h2>
+          <h2>Entrenamiento con los mejores entrenadores del mundo en línea.</h2>
         </div>
 
         <style>
@@ -63,13 +63,13 @@
         <div class="container">
           <div class="two-columns-wrapper">
             <div>
-              <h3 class="title">ABOUT US</h3>
-              <p class="text">ALLSTARLIGA aims to make quality training accessible to everyone, regardless of location or skill level. We provide top coaches and modern techniques to help each of our clients achieve their goals. </p>
-              <p class="text">Our company was founded by professionals with years of experience in fitness and sports, who combined their knowledge and passion to create ALLSTARLIGA.</p>
+              <h3 class="title">SOBRE NOSOTROS</h3>
+              <p class="text">ALLSTARLIGA tiene como objetivo hacer que el entrenamiento de calidad sea accesible para todos, independientemente de su ubicación o nivel de habilidad. Proporcionamos entrenadores de primer nivel y técnicas modernas para ayudar a cada uno de nuestros clientes a alcanzar sus objetivos.</p>
+              <p class="text">Nuestra empresa fue fundada por profesionales con años de experiencia en fitness y deportes, que combinaron sus conocimientos y pasión para crear ALLSTARLIGA.</p>
             </div>
             <div class="img-wrapper">
-              <img class="tablet-only" src="../images/001-min.png" alt="About us" loading="lazy">
-              <img class="mobile-only" src="../images/001-mobile.png" alt="About us" loading="lazy">
+              <img class="tablet-only" src="../images/001-min.png" alt="Sobre nosotros" loading="lazy">
+              <img class="mobile-only" src="../images/001-mobile.png" alt="Sobre nosotros" loading="lazy">
             </div>
           </div>
         </div>
@@ -80,19 +80,19 @@
        
        <section class="section our-values">
         <div class="container">
-          <h3 class="title">Our values</h3>
+          <h3 class="title">Nuestros valores</h3>
           <ul class="three-columns">
             <li>
-              <img src="../images/image-4.png" alt="Value: Quality">
-              <p class="text"><strong>Quality:</strong> We work exclusively with highly qualified coaches who have extensive experience and a proven reputation.</p>
+              <img src="../images/image-4.png" alt="Valor: Calidad">
+              <p class="text"><strong>Calidad:</strong> Trabajamos exclusivamente con entrenadores altamente calificados que tienen una amplia experiencia y una reputación probada.</p>
             </li>
             <li>
-              <img src="../images/image-1.png" alt="Value: Innovation">
-              <p class="text"><strong>Innovation:</strong> We utilize modern technologies to provide the best online training experience.</p>
+              <img src="../images/image-1.png" alt="Valor: Innovación">
+              <p class="text"><strong>Innovación:</strong> Utilizamos tecnologías modernas para proporcionar la mejor experiencia de entrenamiento en línea.</p>
             </li>
             <li>
-              <img src="../images/image-3.png" alt="Value: Support">
-              <p class="text"><strong>Support:</strong> We are always ready to assist our clients on their journey toward achieving their goals.</p>
+              <img src="../images/image-3.png" alt="Valor: Apoyo">
+              <p class="text"><strong>Apoyo:</strong> Siempre estamos listos para ayudar a nuestros clientes en su camino hacia el logro de sus objetivos.</p>
             </li>
           </ul>
         </div>
@@ -104,12 +104,12 @@
         <div class="container">
           <div class="two-columns-wrapper">
             <div>
-              <h3 class="title">Services</h3>
-              <p class="text">ALLSTARLIGA offers a wide range of online training services for children and adults worldwide. Our programs include individual and group sessions, tailored to various fitness levels. Available training options include fitness, yoga, martial arts, and other disciplines. We collaborate with professional coaches who will help you reach your goals at a time convenient for you. The sessions are conducted on modern platforms, ensuring high-quality interaction and maximum comfort.</p>
+              <h3 class="title">Servicios</h3>
+              <p class="text">ALLSTARLIGA ofrece una amplia gama de servicios de entrenamiento en línea para niños y adultos en todo el mundo. Nuestros programas incluyen sesiones individuales y grupales, adaptadas a varios niveles de condición física. Las opciones de entrenamiento disponibles incluyen fitness, yoga, artes marciales y otras disciplinas. Colaboramos con entrenadores profesionales que te ayudarán a alcanzar tus objetivos en un horario conveniente para ti. Las sesiones se llevan a cabo en plataformas modernas, asegurando una interacción de alta calidad y máxima comodidad.</p>
             </div>
             <div class="img-wrapper">
-              <img class="tablet-only" src="../images/image-2.png" alt="About our services" loading="lazy">
-              <img class="mobile-only" src="../images/image-2-mobile-min.png" alt="About our services" loading="lazy">
+              <img class="tablet-only" src="../images/image-2.png" alt="Sobre nuestros servicios" loading="lazy">
+              <img class="mobile-only" src="../images/image-2-mobile-min.png" alt="Sobre nuestros servicios" loading="lazy">
             </div>
           </div>
         </div>
@@ -135,17 +135,17 @@
       <div class="social-links-wrapper">
         <ul class="social-links-list">
           <li>
-            <a href="#" aria-label="linkedin profile" class="social-link">
+            <a href="#" aria-label="perfil de linkedin" class="social-link">
               <img src="../icons/icon-linkedin.svg" alt="linkedin">
             </a>
           </li>
           <li>
-            <a href="#" aria-label="instagram profile" class="social-link">
+            <a href="#" aria-label="perfil de instagram" class="social-link">
               <img src="../icons/icon-instagram.svg" alt="instagram">
             </a>
           </li>
           <li>
-            <a href="#" aria-label="whatsapp number" class="social-link">
+            <a href="#" aria-label="número de whatsapp" class="social-link">
               <img src="../icons/icon-whatsapp.svg" alt="whatsapp">
             </a>
           </li>
@@ -154,7 +154,7 @@
       <!-- copyright block -->
       <div class="footer-copyright">
         <div class="container">
-          <p class="text-md">© 2024 All rights reserved.</p>
+          <p class="text-md">© 2024 Todos los derechos reservados.</p>
         </div>
       </div>
       
@@ -166,7 +166,7 @@
     <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
     <script type="text/javascript" charset="UTF-8">
       document.addEventListener('DOMContentLoaded', function () {
-      cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false});
+      cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"dark","language":"es","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false});
     });
     </script> 
     <!-- Our script -->
