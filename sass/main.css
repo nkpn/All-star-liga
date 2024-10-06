@@ -350,12 +350,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 25px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -427,7 +427,7 @@ header .language-selectors .language-selector.active {
 footer {
   border-top: 1px solid #FEDB01;
   background-color: #000000;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 1024px) {
   footer {
@@ -470,6 +470,9 @@ footer .footer-contact-info a {
   color: #ffffff;
   line-height: 24px;
   font-weight: 600;
+}
+footer .footer-contact-info a:not(:last-of-type) {
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 1024px) {
   footer .footer-contact-info a {
@@ -699,6 +702,7 @@ video {
   color: #FEDB01;
   margin-top: 16px;
   text-transform: unset;
+  max-width: 90%;
 }
 @media screen and (min-width: 768px) {
   .hero .container h2 {
@@ -707,36 +711,37 @@ video {
     line-height: 29px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .hero .container h2 {
     margin-bottom: 120px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .hero .container img {
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
   }
 }
 
-.about-us {
+.about-us .container {
   padding-top: 70px;
 }
 @media screen and (min-width: 1024px) {
-  .about-us {
+  .about-us .container {
     padding-top: 96px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .about-us .img-wrapper {
-    margin-left: -16px;
-    margin-right: -16px;
+  .about-us .container .img-wrapper {
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
-.about-us .text {
+.about-us .container .text {
   text-align: left;
 }
-.about-us .text:not(:last-of-type) {
+.about-us .container .text:not(:last-of-type) {
   margin-bottom: 20px;
 }
 

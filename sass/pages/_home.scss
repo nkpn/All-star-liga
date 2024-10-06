@@ -28,27 +28,29 @@
             color: $yellow;
             margin-top: 16px;
             text-transform: unset;
+            max-width: 90%;
 
             @media screen and (min-width: $tablet) {
                 margin-bottom: 60px;
                 font-size: 24px;
                 line-height: 29px;
             }
-            @media screen and (min-width: $tablet) {
+            @media screen and (min-width: $desktop) {
                 margin-bottom: 120px;
+                max-width: 100%;
             }
         }
 
         img {
             @media screen and (min-width: $tablet) {
-                max-width: 1000px;
+                max-width: 100%;
                 margin: auto;
             }
         }
     }
 }
 
-.about-us {
+.about-us .container {
     padding-top: 70px;
 
     @media screen and (min-width: $desktop) {
@@ -58,8 +60,8 @@
     // FOR MOBILE ONLY
     @media screen and (max-width: $desktop) {
         .img-wrapper {
-            margin-left: -16px;
-            margin-right: -16px;
+            margin-left: -20px;
+            margin-right: -20px;
         }
     }
 

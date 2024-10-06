@@ -67,7 +67,7 @@ header {
 footer {
     border-top: 1px solid $yellow;
     background-color: $black;
-    padding-top: 50px;
+    padding-top: 60px;
 
     @media screen and (min-width: $desktop) {
         padding-top: 110px;
@@ -109,6 +109,10 @@ footer {
             color: $white;
             line-height: 24px;
             font-weight: 600;
+
+            &:not(:last-of-type) {  
+                margin-bottom: 16px;
+            }
 
             @media screen and (min-width: $desktop) {
                 font-size: 32px;
